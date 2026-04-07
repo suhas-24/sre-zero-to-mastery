@@ -5,7 +5,8 @@ This repository is a production-style learning program for Site Reliability Engi
 ## Current state
 
 - `Topic 0` is complete: the "Complete SRE Universe Map"
-- `Topic 1+` will be added one major topic at a time
+- `Topic 1` is complete: "What Is SRE?"
+- `Topic 2+` will be added one major topic at a time
 - each topic must be researched against current 2024-2026 sources before authoring
 
 ## Repository layout
