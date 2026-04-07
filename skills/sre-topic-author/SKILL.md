@@ -1,15 +1,17 @@
 ---
 name: sre-topic-author
-description: Generate one topic at a time for an SRE zero-to-mastery curriculum by first performing a live research sweep across official docs, incidents, CNCF ecosystem sources, and current community discussion, then writing the topic in a strict teaching format with source logging.
+description: "Generate or review one SRE curriculum topic at a time with live research, strict topic scope, complete subtopic coverage, required closing sections, and a sub-agent review gate before commit or push."
 ---
 
 # SRE Topic Author
 
-Use this skill when authoring or updating any topic in this repository.
+Use this skill when authoring, updating, or reviewing any topic in this repository.
 
 ## Goal
 
 Produce exactly one topic per run. Do not merge topics unless the user explicitly asks.
+
+Honor the curriculum contract strictly, not approximately.
 
 ## Required Workflow
 
@@ -19,6 +21,8 @@ Produce exactly one topic per run. Do not merge topics unless the user explicitl
 4. Update or create a topic-specific source log under `docs/sources/`.
 5. Write the learner-facing topic page under `docs/topics/`.
 6. Keep the teaching aligned with the repository template.
+7. Run a fresh sub-agent review before commit or push.
+8. Fix any contract violations the review finds.
 
 ## Mandatory Live Research Sweep
 
@@ -49,6 +53,7 @@ For each topic, explicitly look for:
 5. hiring expectations, certifications, or role standards
 6. AI-agent or LLM-driven changes relevant to that topic
 7. orchestration frameworks being used for agentic or automated workflows when relevant
+8. tools or startups from the last 6 months that may be changing practice, while being explicit if signal quality is weak
 
 ## Writing Rules
 
@@ -58,12 +63,42 @@ For each topic, explicitly look for:
 - Use plain language first, then technical precision.
 - Include real examples where useful.
 - Be explicit about opinionated versus widely accepted practices.
+- Use analogies, system diagrams in words, and production war stories where they help learning.
+- Treat the learner as starting from zero knowledge.
 - End with:
   - tight summary
   - key terms to know
   - try this
   - invitation to continue
   - one sentence explaining how the requested emotion mix shaped the teaching
+
+## Exact Contract To Enforce
+
+The topic must follow the repository template and the user contract exactly enough that a reviewer can check:
+
+- one major topic only
+- no listed subtopic skipped
+- current web research happened first
+- community and AI-workflow signals were checked
+- claims that may have changed were verified live
+- real tools and incidents are woven into the lesson
+- the closing sentence for Topic 0 remains:
+  - `This is your map. You will never feel lost. Say "next" to begin Topic 1.`
+
+## Required Review Gate
+
+Before any commit or push for a topic:
+
+1. Spawn at least one fresh sub-agent.
+2. Ask it to review the topic for compliance with the curriculum contract.
+3. Treat its output as independent review, not as a rubber stamp.
+4. Fix issues and rerun review if needed.
+
+Use prompts like:
+
+- `Review docs/topics/topic-01-what-is-sre.md against the curriculum contract in skills/sre-topic-author/SKILL.md and list any violations or missing requirements.`
+
+Do not skip this gate just because the topic looks good locally.
 
 ## File Conventions
 
@@ -79,3 +114,4 @@ For each topic, explicitly look for:
 - If a source is weak or indirect, say so.
 - Do not present unsettled industry debates as settled facts.
 - Keep the topic self-contained so it can be published independently.
+- When community discussion is noisy or inaccessible, say that and rely on stronger sources instead of pretending confidence.

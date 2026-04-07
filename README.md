@@ -11,6 +11,7 @@ This repository is a production-style learning program for Site Reliability Engi
 ## Repository layout
 
 - `docs/roadmap/00-complete-sre-universe-map.md` - primary published roadmap and learner entry point
+- `docs/topics/topic-0-complete-sre-universe-map.md` - published Topic 0
 - `docs/topics/` - one learner-facing file per major topic
 - `docs/research/` - working research notes for each topic
 - `docs/sources/` - topic-specific source logs
@@ -31,6 +32,20 @@ Every topic must:
    - one hands-on exercise
    - the next-topic invitation
    - the required emotion-mix sentence
+
+## Review and publish gate
+
+Before any topic is pushed:
+
+1. A live research sweep must be logged.
+2. The topic must be checked against the exact curriculum contract.
+3. At least one fresh sub-agent review must verify that the topic:
+   - teaches only one major topic
+   - covers every listed subtopic for that topic
+   - defines technical terms before first use
+   - includes the required ending structure
+   - reflects current sources rather than stale memory
+4. Only after the review passes should the topic be committed and pushed.
 
 ## 33-topic roadmap
 
@@ -100,11 +115,20 @@ Every topic must:
 32. SRE Soft Skills and Culture
 33. SRE Career Path and Certifications
 
+## Publishing workflow
+
+1. research one topic live
+2. update the topic source log
+3. write exactly one topic file
+4. commit the change set
+5. push to GitHub
+
 ## Source anchors
 
 - Google SRE hub: https://sre.google/
 - Google SRE resources: https://sre.google/resources/
+- Google SRE books: https://sre.google/books/
 - DORA 2024 State of DevOps: https://cloud.google.com/devops/state-of-devops/
-- Catchpoint SRE Report 2025: https://www.catchpoint.com/learn/sre-report-2025
-- CNCF Cloud Native Survey 2024: https://www.cncf.io/reports/cncf-annual-survey-2024/
-- CNCF Annual Cloud Native Survey 2026: https://www.cncf.io/reports/the-cncf-annual-cloud-native-survey/
+- Catchpoint: https://www.catchpoint.com/
+- CNCF landscape: https://landscape.cncf.io/
+- OpenTelemetry docs: https://opentelemetry.io/docs/

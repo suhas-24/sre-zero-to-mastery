@@ -1,8 +1,0 @@
-interface:
-  display_name: "SRE Curriculum Author"
-  short_description: "Author one live-researched SRE topic"
-  brand_color: "#0F766E"
-  default_prompt: "Use $sre-curriculum-author to create the next SRE curriculum topic with fresh research and production-grade examples."
-
-policy:
-  allow_implicit_invocation: true

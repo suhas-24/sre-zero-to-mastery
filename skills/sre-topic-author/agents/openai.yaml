@@ -1,7 +1,5 @@
+version: 1
 interface:
-  display_name: "SRE Topic Author"
-  short_description: "Research and write one SRE topic"
-  default_prompt: "Use $sre-topic-author to research and write the next SRE curriculum topic with a source log."
-
-policy:
-  allow_implicit_invocation: true
+  display_name: SRE Topic Author
+  short_description: Author one SRE topic with review gate
+  default_prompt: Research one SRE topic, write it to the repository contract, run a sub-agent review, and prepare it for commit.
