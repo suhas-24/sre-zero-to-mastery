@@ -1,17 +1,22 @@
 # Zero-to-Mastery SRE
 
-This repository is a production-style learning program for Site Reliability Engineering (SRE), built topic by topic and published incrementally.
+This repository teaches Site Reliability Engineering through concrete situations, visual explanations and experiments. It assumes every technical term may be new and explains supporting ideas when the learner needs them.
+
+Read the [learning design](docs/LEARNING-DESIGN.md) and [scenario learning path](docs/roadmap/01-scenario-learning-path.md). The numbered topics below are a coverage and reference catalog, not prerequisite gates.
 
 ## Current state
 
 - `Topic 0` is complete: the "Complete SRE Universe Map"
 - `Topic 1` is complete: "What Is SRE?"
-- `Topic 2+` will be added one major topic at a time
-- each topic must be researched against current 2024-2026 sources before authoring
+- The scenario-driven teaching contract is recorded; existing topic pages still need review and adaptation.
+- Further material will be published incrementally, with coverage and verification status visible.
+- use authoritative primary sources; verify version-sensitive claims against current sources
 
 ## Repository layout
 
-- `docs/roadmap/00-complete-sre-universe-map.md` - primary published roadmap and learner entry point
+- `docs/LEARNING-DESIGN.md` - current teaching contract
+- `docs/roadmap/01-scenario-learning-path.md` - proposed experience path
+- `docs/roadmap/00-complete-sre-universe-map.md` - topic coverage and reference map
 - `docs/topics/topic-0-complete-sre-universe-map.md` - published Topic 0
 - `docs/topics/` - one learner-facing file per major topic
 - `docs/research/` - working research notes for each topic
@@ -21,32 +26,26 @@ This repository is a production-style learning program for Site Reliability Engi
 
 ## Authoring rules
 
-Every topic must:
+Follow [AGENTS.md](AGENTS.md) and [the episode checklist](docs/templates/topic-template.md).
 
-1. Start with a "You are here" progress map.
-2. Cover exactly one major topic.
-3. Perform a live intelligence sweep first.
-4. Weave current tools, incidents, debates, and hiring expectations into the lesson.
-5. End with:
-   - a summary
-   - a key terms box
-   - one hands-on exercise
-   - the next-topic invitation
-   - the required emotion-mix sentence
+- Begin with a concrete situation and a clear user goal.
+- Explain every new term at the point it matters, before relying on it.
+- Teach Linux, networking, mathematics and other supporting ideas inside the situation; do not require separate prerequisite courses.
+- Connect topics where they explain the same problem, and revisit them with increasing depth.
+- Blend prose, diagrams, predictions, experiments and feedback around one question.
+- Include failure modes, edge cases, trade-offs and recovery evidence.
+- Keep technical research current and sources traceable. Record coverage and known gaps.
 
 ## Review and publish gate
 
-Before any topic is pushed:
+Before publishing learner-facing topic changes:
 
-1. A live research sweep must be logged.
-2. The topic must be checked against the exact curriculum contract.
-3. At least one fresh sub-agent review must verify that the topic:
-   - teaches only one major topic
-   - covers every listed subtopic for that topic
-   - defines technical terms before first use
-   - includes the required ending structure
-   - reflects current sources rather than stale memory
-4. Only after the review passes should the topic be committed and pushed.
+1. Log the live research and primary references.
+2. Check the current teaching contract and mapped subtopic coverage.
+3. Obtain a fresh independent sub-agent review, checking entry without prerequisites, first-use definitions, connected reasoning, technical accuracy, edge cases and media consistency.
+4. Fix issues, record what was tested and what remains unverified, then commit and push.
+
+The clarified user contract supersedes older isolated-topic and mandatory-order instructions. The existing authoring skill continues to supply research and review guidance under that contract.
 
 ## 33-topic roadmap
 
@@ -118,11 +117,11 @@ Before any topic is pushed:
 
 ## Publishing workflow
 
-1. research one topic live
-2. update the topic source log
-3. write exactly one topic file
-4. commit the change set
-5. push to GitHub
+1. research the episode’s mapped concepts and verify claims that can change
+2. update the relevant research notes and source log
+3. write the coherent learner experience and update its mapped reference coverage
+4. complete independent review and applicable checks
+5. commit the change set and push to GitHub
 
 ## Source anchors
 

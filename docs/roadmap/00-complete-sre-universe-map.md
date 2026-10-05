@@ -1,24 +1,16 @@
 # Complete SRE Universe Map
 
-You are at the start of the SRE journey.
+This is the topic coverage catalog. For the experience path, read [Learn inside the situation](01-scenario-learning-path.md) and the [learning design](../LEARNING-DESIGN.md).
 
-This map exists so the learner never mistakes the path for a pile of disconnected tools. SRE is not "Prometheus plus Kubernetes plus on-call." It is a layered operating model for building, measuring, defending, and evolving production systems.
+The topic numbering does not impose a prerequisite sequence. Supporting concepts are explained locally when each scenario needs them. Existing topic content still requires review against this updated teaching contract.
+
+This map is a coverage catalog for a field that joins software, systems, people and operational decisions. SRE is not a checklist of tools. Its ideas connect when a real service must meet user needs and recover from failure.
 
 ## Why this map matters
 
-If you skip the foundations, you can operate dashboards but not systems.
+The catalog makes coverage visible across the field. The learning experience can cross these categories: a slow request may introduce a network connection, a queue and a latency measurement in one connected story. Each new term is explained before the learner needs it.
 
-If you skip SLOs and error budgets, you will confuse activity with reliability.
-
-If you skip observability, you will be blind during incidents.
-
-If you skip incident management, every outage becomes improvisation.
-
-If you skip cloud, containers, and Kubernetes, you will be underprepared for most modern production environments.
-
-If you skip performance, capacity, and security, your systems may stay "up" while still failing users.
-
-If you skip soft skills, you may be technically strong but ineffective in real organizations.
+Foundations are essential knowledge that we teach in context and revisit at increasing depth. They are not admission requirements for entering a later scenario.
 
 ## The 11 layers and why each becomes critical
 
@@ -156,25 +148,11 @@ This becomes critical on every bad day in production and every career transition
 32. SRE Soft Skills and Culture
 33. SRE Career Path and Certifications
 
-## What breaks in production if you skip the foundations
+## Connect the layers through situations
 
-Skip Topic 1 and you may treat SRE as a toolchain instead of a discipline.
+A timeout can involve networking, application work, a database wait or a missing response. Teach the distinctions through evidence and local explanations. Return to relevant foundation topics for optional deeper exploration.
 
-Skip Topic 2 and you may misread host-level failure, resource starvation, or kernel behavior.
-
-Skip Topic 3 and you may blame applications for DNS, TCP, TLS, routing, or load balancing failures.
-
-Skip Topic 4 and you may stay trapped in toil because every fix remains manual.
-
-Skip Topic 5 and you may never know whether the service is truly meeting user expectations.
-
-Skip Topic 8 and you may keep deploying into distributed-system traps you do not recognize.
-
-Skip Topics 9 through 14 and you may not know what is broken, where, or whether someone should be paged.
-
-Skip Topics 15 through 16 and you may recover slowly and learn poorly.
-
-Skip Topics 17 through 20 and you may be unable to reason about the infrastructure most employers now use.
+Use the [scenario path](01-scenario-learning-path.md) to plan those encounters. Track initial introductions and deeper revisits separately; mentioning a concept is not complete coverage.
 
 ## What matters most for getting hired in 2025-2026
 
@@ -222,18 +200,14 @@ Several debates are active across Reddit, InfoQ, The New Stack, CNCF content, an
 
 ## The practical framing for this roadmap
 
-This curriculum is intentionally ordered like a production stack:
+Begin with a recognizable user action or service symptom. Reveal the system, explain unfamiliar terms locally, and let the learner test an idea. Introduce a relevant exception and revisit the mechanism with greater precision.
 
-1. Learn how machines and networks behave.
-2. Learn how reliability is defined and traded.
-3. Learn how to observe reality.
-4. Learn how to respond when reality goes wrong.
-5. Learn how modern infrastructure is built and changed.
-6. Learn how to scale safety, performance, security, and organizational leverage.
+Keep the catalog as a reference and coverage structure. Readers can enter through a scenario, symptom or topic, with the necessary context supplied there. No separate foundations-first course is required.
 
-That order matters. If you reverse it, you get surface familiarity without operational depth.
+## Source snapshot and signals
 
-## Latest signals shaping this roadmap
+This roadmap was reviewed on 5 October 2026 as a planning aid. The notes below summarize selected sources; they are not an exhaustive or independently revalidated survey of all 33 topics. Verify each version-sensitive claim again while preparing the corresponding lesson. Older foundational sources remain useful when they explain durable principles.
+
 
 - Google's SRE resource hub still anchors the field, especially the original SRE book, the Workbook, and secure-and-reliable-systems material.
 - DORA's 2024 report keeps platform engineering and developer experience in the center of software delivery performance.
@@ -262,9 +236,7 @@ That order matters. If you reverse it, you get surface familiarity without opera
 
 ## Final orientation
 
-This roadmap starts by teaching you how systems work, then how reliability is defined, then how to see and improve reality under production pressure.
+Enter through a situation, question, or topic that matters to you. A lesson should bring in system behavior, reliability goals, evidence, people and tools as its question needs them, then point to deeper explanations and other situations.
 
-That is the difference between memorizing tools and becoming an SRE.
-
-This is your map. You will never feel lost. Say "next" to begin Topic 1.
+Use this map to find and track the field’s coverage. Its numbering organizes ideas; it does not prescribe the order in which you must learn them.
 
