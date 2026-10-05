@@ -1,41 +1,28 @@
 # Curriculum Contract
 
-Use this contract when authoring or reviewing any topic.
+This contract applies to all learner-facing SRE material. Read it with `AGENTS.md`, `docs/LEARNING-DESIGN.md` and `docs/roadmap/01-scenario-learning-path.md`.
 
-## Required teaching behavior
+## The learning experience
 
-- Teach one major topic only.
-- Assume the learner knows nothing.
-- Use plain language first.
-- Define every technical term before first use.
-- Cover every listed subtopic for the topic.
-- Use real tools, real incidents, and real production examples where useful.
-- Note opinionated guidance versus broad industry consensus.
+- Start with a coherent situation, question or learner goal.
+- Assume the learner may not know any term that appears. Explain each essential idea where it first matters, before relying on it.
+- Bring in Linux, networking, programming, statistics, security and other foundations locally, as the situation needs them. Do not gate learning on prerequisite courses.
+- Connect concepts across catalog topics when they explain the same situation. A focused reference page may go deep on one subject; it is an optional route into the knowledge, not an entrance requirement.
+- Use prediction, evidence, experiments, worked examples, diagrams or other formats where they help the learner reason. Keep the essential explanation available in accessible text.
+- Revisit ideas in harder settings so the learner sees boundaries and trade-offs.
 
-## Required live research behavior
+## Coverage and evidence
 
-Before teaching, browse for:
+- Map each episode/page to the topics and subtopics it teaches.
+- Distinguish a brief introduction from full coverage. State what is deferred, and keep a record of uncovered material.
+- Include meaningful exceptions, alternatives, risks and recovery checks in substantial lessons.
+- Keep technical sources traceable. Verify claims that can change against current authoritative sources; identify uncertainty and contested practice.
+- Distinguish sourced incidents from fictional teaching examples, and report whether a lab was planned, drafted, or actually run.
 
-- latest standards, best practices, and tooling
-- recent incidents and postmortems
-- current CNCF and ecosystem tools
-- emerging trends and paradigm shifts
-- certifications, interview expectations, and career signals
-- current community debate
-- AI-agent and workflow-orchestration changes relevant to the topic
+## Quality review
 
-## Required ending
+A learner-facing page must be understandable when opened directly, without earlier pages. Review first-use term explanations in prose, diagram labels, code, charts, captions and controls. Check technical accuracy, assumptions, edge cases, evidence, accessibility, media consistency and coverage claims. Obtain fresh independent review before committing or pushing lesson changes and resolve material findings.
 
-Every topic ends with:
+## Topic 0 navigation
 
-1. tight summary
-2. key terms to know
-3. try this
-4. `Ready for the next topic? Just say 'next' or tell me which topic you want to deep-dive further.`
-5. `This mix of passionate, enthusiastic, calm, reflective, and laser-focused emotions made me teach this SRE topic like this: ...`
-
-## Topic 0 special rule
-
-Before Topic 1 begins, the learner must receive the SRE universe map and the closing statement:
-
-`This is your map. You will never feel lost. Say "next" to begin Topic 1.`
+Topic 0 can retain the map's welcoming invitation to continue to Topic 1, provided the repository also makes clear that the numbered catalog is a reference map and not a required prerequisite sequence.
